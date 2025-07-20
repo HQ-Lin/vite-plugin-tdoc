@@ -4,7 +4,7 @@ export const containerPlugin = (md, userContainerOption) => {
   md.use(...createContainer("tip", "TIP"))
     .use(...createContainer("info", "INFO"))
     .use(...createContainer("warning", "WARNING"))
-    .use(...createContainer("danger", "WARNING"))
+    .use(...createContainer("danger", "DANGER"))
     // explicitly escape Vue syntax
     .use(container, "v-pre", {
       render: (tokens, idx) =>
